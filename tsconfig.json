@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",        // if React 17+ (or "react" for older)
+    "lib": ["dom", "esnext"],  // must include "dom"
+    "strict": true,
+    "esModuleInterop": true
+  }
+}

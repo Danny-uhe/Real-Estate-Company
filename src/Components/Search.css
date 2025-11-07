@@ -1,0 +1,65 @@
+/* Slide down animation */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+/* Add to Search.css if needed */
+.slick-slider,
+.slick-list,
+.slick-track {
+  height: 100vh; /* full viewport height */
+}
+
+.slick-slide img {
+  height: 100vh;
+  object-fit: cover; /* ensures image covers screen without stretching */
+}
+
+
+/* Slick Dots Custom Style */
+.slick-dots {
+  bottom: 20px !important; /* inside the screen */
+  margin: 0;
+  padding: 0;
+
+  /* position: absolute !important;
+  bottom: 20px !important;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 20; */
+}
+
+.slick-dots li {
+  margin: 0 6px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.slick-dots li.slick-active button {
+  background: rgba(255, 255, 255, 0.9); /* brighter for active dot */
+}
+
